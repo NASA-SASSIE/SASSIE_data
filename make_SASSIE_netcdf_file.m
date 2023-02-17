@@ -246,7 +246,7 @@ attrs{end+1}=uuid;
 % their value is zero, and lower-order elements may also be omitted for reduced precision. 
 dur=max(data.time)-min(data.time);
 % (for the TSG dataduration is slightly less than 1 month, so omit the Y and M elements:
-time_coverage_duration = ['P' datestr(dur,'MM') 'DT' datestr(dur,'HH') 'H' datestr(dur,'MM') 'M' datestr(dur,'SS') 'S'];
+time_coverage_duration = ['P' datestr(dur,'dd') 'DT' datestr(dur,'HH') 'H' datestr(dur,'MM') 'M' datestr(dur,'SS') 'S'];
 attr_names{end+1}='time_coverage_duration';
 attrs{end+1}=time_coverage_duration;
 
